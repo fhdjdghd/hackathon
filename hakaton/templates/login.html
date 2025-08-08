@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #FAEEBD; /* Нежный желтоватый фон */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #FFFCD0; /* Пастельный желтый фон формы */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #FFBF00; /* Яркий золотой цвет границ */
+        }
+
+        button[type="submit"] {
+            background-color: #FFDF00; /* Солнечно-желтый цвет кнопки */
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            transform: scale(1.05); /* Немного увеличиваем размер при наведении */
+            background-color: #FFCA00; /* Оттенок золота при наведении */
+        }
+
+        a {
+            color: #FF6347; /* Терракотово-красный цвет ссылок */
+            text-decoration: underline;
+            margin-top: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                width: 90%; /* Адаптация ширины формы для мобильных устройств */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="position: absolute; top: 30px; left: 30px; color: #FFBF00; font-size: 3em; z-index: -1; opacity: 0.5;">Login</h1>
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <button type="submit">Log In</button>
+    </form>
+    <a href="/register">No Account? Register Here</a>
+</body>
+</html>

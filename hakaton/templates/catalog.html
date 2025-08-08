@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>BagStylePro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+          background-color: #fffbe6; /* Мягкий солнечно-желтый фон */
+          color: #333; /* Черный текст для лучшей читаемости */
+      }
+      
+      .btn-warning {
+          background-color: #ffdf59 !important; /* Жёлтый цвет кнопок */
+          border-color: transparent !important;
+          color: #333 !important;
+      }
+      
+      .btn-warning:hover {
+          background-color: #ffcc00 !important; /* Эффект плавного перехода цвета */
+      }
+      
+      .card {
+          background-color: #ffffe0; /* Бледно-жёлтый фон карточек товара */
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      
+      .card img {
+          width: 100%;
+          object-fit: cover;
+          height: 200px;
+      }
+      
+      .card-title {
+          font-size: 1.2em;
+          color: #ff6600; /* Теплый оранжевый цвет заголовков */
+      }
+      
+      .card-text {
+          font-size: 1.1em;
+          color: #333;
+      }
+      
+      hr {
+          border-color: #ffe066; /* Лёгкая разделительная линия жёлтого цвета */
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container mt-4">
+
+<!-- Корзину вынесем сюда, выше рядов товаров -->
+<div style="margin-bottom: 20px; clear: both;">
+    <a href="/basket">
+        <button style="width: 200px; height: 80px;" type="button" class="btn btn-warning">Корзина</button>
+    </a>
+</div>
+
+        <!-- 1 ряд -->
+        <div class="row mb-3">
+
+            <div class="col-md-4 md-3">
+                <div class="card">
+                    <a href="/checkVI"><img src="https://avatars.mds.yandex.net/get-mpic/11408361/2a000001946837f52753078f9dd1c145b7f7/orig"   class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Висюльки</h5>
+                            <p class="card-text">250 Рублей</p>
+                            <button type="button" class="btn btn-outline-warning">Добавить в корзину</button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-4 md-3">
+                <div class="card">
+                    <a href="/checkV/"><img src="https://avatars.mds.yandex.net/i?id=de6fd929454205171c380bf02f7f661ec24809dc-4576161-images-thumbs&n=13"  class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Мягкие игрушки</h5>
+                            <p class="card-text">450 Рублей</p>
+                            <button type="button" class="btn btn-outline-warning">Добавить в корзину</button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-4 md-3">
+                <div class="card">
+                    <a href="/checkB"><img src="https://img.joomcdn.net/5a83deae0de8ef2a9b670826d426c1a22ab747ec_original.jpeg"   class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Бантики</h5>
+                            <p class="card-text">350 Рублей</p>
+                            <button type="button" class="btn btn-outline-warning">Добавить в корзину</button>
+                        </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
